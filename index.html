@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Superhero Registration</title>
+</head>
+<body>
+    <header></header>
+    <div class="title-section">
+      <!-- Store icon here -->
+    </div>
+    <div class="navbar">
+      <a href="#">Contacto</a>
+      <a href="#">Registrarme</a>
+      <a href="#">Ingresar</a>
+    </div>
+    <div class="content-container">
+      <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+          <h1>Superhero Registration</h1>
+          <p>Join the superhero league and save the world!</p>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="specie">Specie:</label>
+          <select id="specie" name="specie" required>
+            <option value="human">Human</option>
+            <option value="ufo">UFO</option>
+            <option value="another">Another</option>
+          </select>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+          <label for="picture">Select Picture:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" required>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+          <div class="powers">
+            <label>Powers:</label>
+            <select id="powers" name="powers[]" multiple required size="4">
+              <option value="Volar">Volar</option>
+              <option value="Superiteligencia">Superinteligencia</option>
+              <option value="Vista de rayo laser">Vista de rayo laser</option>
+              <option value="Billetera gorda">Billetera gorda</option>
+            </select>
+          </div>
+          <div class="divider"></div>
+          <div class="character-type">
+            <label>Tipo de personaje:</label>
+            <input type="radio" id="heroe" name="character_type" value="Heroe" required>
+            <label for="heroe">Heroe</label><br>
+            <input type="radio" id="villano" name="character_type" value="Villano" required>
+            <label for="villano">Villano</label><br>
+          </div>
+          <button type="submit">Añadir</button>
+        </form>
+      </div>
+    </div>
+    <footer>&copy; 2023 Superhero League</footer>
+  </body>
+</html>
